@@ -36,7 +36,7 @@ app.get('/', (req, res)=>{
  res.send('Hello there!!!')
 })
 
-app.use('/api/v1/user', bucketRouter)
+app.use('/api/v1', bucketRouter)
 
 app.use(notFound)
 app.use(errorHandlerMiddleware)
